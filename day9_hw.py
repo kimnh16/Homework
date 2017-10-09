@@ -2,7 +2,7 @@ import turtle as t
 import time
 import random
 
-x = input("성함을 입력해주세요.")
+x = input("성함을 입력해주세요:")
 
 if x == "김관호":
     print("김관호 교수님, 안녕하세요? 김나형입니다. 제가 만든 패턴을 보여드리겠습니다.")
