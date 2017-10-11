@@ -1,109 +1,53 @@
-<<<<<<< HEAD
-import turtle as t
-import time
-import random
+import turtle as t                                                                        # 거북이 그래픽 불러옴, t라고 부를 것
+import time                                                                               # time 모듈을 불러옴
+import random                                                                             # random 모듈을 불러옴
 
-x = input("성함을 입력해주세요:")
+x = input("성함을 입력해주세요:")                                                         # 이름을 입력받음
 
-if x == "김관호":
-    print("김관호 교수님, 안녕하세요? 김나형입니다. 제가 만든 패턴을 보여드리겠습니다.")
+if x ==  "김관호":                                                                        # 이름이 "김관호" 일 때 아래를 실행
+    print("김관호 교수님, 안녕하세요? 김나형입니다. 제가 만든 패턴을 보여드리겠습니다.")  # "김관호 교수님, 안녕하세요? 김나형입니다. 제가 만든 패턴을 보여드리겠습니다."를 출력
 
-    start = time.time()
+    start = time.time()                                                                   # 변수 start에 패턴 실행 시작 시간을 저장
     
-    t.bgcolor("black")
-    t.speed(0)
+    t.bgcolor("black")                                                                    # 배경화면 색을 검정으로 설정
+    t.speed(0)                                                                            # 거북이 속도를 최고속도로 설정
     
-    for x in range(30):
-        angle = random.randint(1, 360)
+    for x in range(30):                                                                   # 아래 과정을 30번 반복 (임의로 결정된 각도에 따라 패턴을 결정하고 그리는 프로그램)
+        angle = random.randint(1, 360)                                                    # 변수 angle에 1부터 360까지의 임의의 정수를 저장
         
-        if angle < 90:
-            t.color("red")
-            t.pensize(3)
-            for i in range(3):
-                t.forward(50)
-                t.left(120)
-            t.pensize(1)
+        if angle < 90:                                                                    # 변수 angle에 저장된 값이 90보다 작다면 다음을 실행함
+            t.color("red")                                                                # 펜 색을 빨간색으로 설정
+            t.pensize(3)                                                                  # 펜 굵기를 3으로 설정
+            for i in range(3):                                                            # 아래 과정을 3회 반복 (정삼각형을 그리는 프로그램)
+                t.forward(50)                                                             # 거북이가 앞으로 50만큼 이동
+                t.left(120)                                                               # 거북이가 왼쪽으로 120도 회전
+            t.pensize(1)                                                                  # 펜 굵기를 원래대로 설정
             
-        if 90 <= angle < 180:
-            t.color("green")
-            t.begin_fill()
-            for j in range(5):
-                t.forward(50)
-                t.left(75)
-            t.end_fill()
+        if 90 <= angle < 180:                                                             # 변수 angle에 저장된 값이 90보다 크거나 같고 180보다 작다면 다음을 실행함
+            t.color("green")                                                              # 펜 색을 초록색으로 설정
+            t.begin_fill()                                                                # 도형 내부를 칠할 준비를 함
+            for j in range(5):                                                            # 아래 과정을 5회 반복 (정오각형을 그리는 프로그램)
+                t.forward(50)                                                             # 거북이가 앞으로 50만큼 이동
+                t.left(75)                                                                # 거북이가 왼쪽으로 75도 회전
+            t.end_fill()                                                                  # 그려진 정오각형의 내부를 채움
             
-        if 180 <= angle < 270:
-            t.color("blue")
-            for k in range(60):
-                t.circle(25)
-                t.left(6)
+        if 180 <= angle < 270:                                                            # 변수 angle에 저장된 값이 180보다 크거나 같고 270보다 작다면 다음을 실행함
+            t.color("blue")                                                               # 펜 색을 파란색으로 설정
+            for k in range(60):                                                           # 아래 과정을 60회 반복 (원이 한바퀴를 돌며 겹친 패턴을 그리는 프로그램)
+                t.circle(25)                                                              # 반지름이 25인 원을 그림
+                t.left(6)                                                                 # 거북이가 왼쪽으로 6도 회전
                 
-        else:
-            t.color("white")
-            for l in range(10,100,5):
-                t.forward(l)
-                t.left(90)
-        t.left(angle)
+        else:                                                                             # 앞 조건을 모두 만족하지 않는다면(변수 angle에 저장된 값이 270보다 크거나 같다면) 다음을 실행함
+            t.color("white")                                                              # 펜 색을 하얀색으로 설정
+            for l in range(10,100,5):                                                     # 10부터 99까지 5만큼씩 커진 숫자를 차례로 변수 I에 저장하며 아래 과정을 반복 (네모 둘레가 회전하며 커지는 패턴을 그리는 프로그램)
+                t.forward(l)                                                              # 거북이가 앞으로 I만큼 이동
+                t.left(90)                                                                # 거북이가 왼쪽으로 90도 회전
+        t.left(angle)                                                                     # 거북이가 왼쪽으로 변수 angle에 저장한 각도만큼 회전
     
-    end = time.time()
-    et = end - start
+    end = time.time()                                                                     # 변수 end에 패턴 실행 종료 시간을 저장
+    et = end - start                                                                      # 변수 et에 시간 차를 저장
 
-    print(et, "초 동안 제 패턴을 기다려주셔서 감사합니다.")
+    print(et, "초 동안 제 패턴을 기다려주셔서 감사합니다.")                               # 기다린 시간을 알림, "~초 동안 제 패턴을 기다려주셔서 감사합니다."를 출력
     
-else:
-    print("죄송합니다! 제 과제는 김관호 교수님만 보실 수 있습니다.")
-=======
-import turtle as t
-import time
-import random
-
-x = input("성함을 입력해주세요:")
-
-if x == "김관호":
-    print("김관호 교수님, 안녕하세요? 김나형입니다. 제가 만든 패턴을 보여드리겠습니다.")
-
-    start = time.time()
-    
-    t.bgcolor("black")
-    t.speed(0)
-    
-    for x in range(30):
-        angle = random.randint(1, 360)
-        
-        if angle < 90:
-            t.color("red")
-            t.pensize(3)
-            for i in range(3):
-                t.forward(50)
-                t.left(120)
-            t.pensize(1)
-            
-        if 90 <= angle < 180:
-            t.color("green")
-            t.begin_fill()
-            for j in range(5):
-                t.forward(50)
-                t.left(75)
-            t.end_fill()
-            
-        if 180 <= angle < 270:
-            t.color("blue")
-            for k in range(60):
-                t.circle(25)
-                t.left(6)
-                
-        else:
-            t.color("white")
-            for l in range(10,100,5):
-                t.forward(l)
-                t.left(90)
-        t.left(angle)
-    
-    end = time.time()
-    et = end - start
-
-    print(et, "초 동안 제 패턴을 기다려주셔서 감사합니다.")
-    
-else:
-    print("죄송합니다! 제 과제는 김관호 교수님만 보실 수 있습니다.")
->>>>>>> 0d4517caabb991bcdbeea27f80d5cc44347118a1
+else:                                                                                     # 이름이 "김관호"가 아닐 때 아래를 실행
+    print("죄송합니다! 제 과제는 김관호 교수님만 보실 수 있습니다.")                      # "죄송합니다! 제 과제는 김관호 교수님만 보실 수 있습니다."를 출력
