@@ -12,10 +12,20 @@ def wall():
         t.forward(500)
         t.left(90)
 
+def start():
+    angle = random.randint(0, 360)
+    t.left(angle)
+    while -250 <= t.xcor() <= 250 and -250 <= t.ycor() <= 250:
+        t.forward(1)
+        t.speed(0)
+    
 wall()
+
 t.up()
 t.home()
 t.down()
 t.shape("turtle")
 
-print(t.pos())
+start()
+ang = t.heading()
+print(ang)
