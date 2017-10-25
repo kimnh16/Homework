@@ -10,6 +10,16 @@ def wall():
     for x in range(4):
         t.forward(500)
         t.left(90)
+        
+# 장애물 그리는 함수(추가함)
+def obstacle():
+    t.speed(0)
+    t.up()
+    t.goto(-150,0)
+    t.down()
+    for x in range(4):
+        t.forward(100)
+        t.left(90)
     
 # 랜덤의 각도로 출발하는 함수
 def start():
@@ -20,7 +30,8 @@ def start():
         t.forward(20)
     while -250 < t.xcor() < 250 and -250 < t.ycor() < 250:
         t.forward(1)
-        
+       
+            
 # 벽에 반사하는 함수
 def reflect():
     ang = t.heading()
@@ -31,7 +42,21 @@ def reflect():
         t.setheading(180 - ang)
     else:
         t.setheading(540 - ang)
+        
     
+# 장애물에 반사하는 함수 (추가함)
+def reflect2():
+    ang2 = t.heading()
+    t.speed(0)
+    if t.ycor() == 0 or t.ycor() == 100:
+        t.setheading(360 - ang2)
+    elif 0 <= ang2 < 180:
+        t.setheading(180 - ang2)
+    else:
+        t.setheading(540 - ang2)
+        
+     
+        
 # n의 속도로 가는 함수
 def speedIs(n):
     t.speed(0)
