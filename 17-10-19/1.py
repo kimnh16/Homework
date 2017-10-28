@@ -29,17 +29,16 @@ def down():
     t.right(5)
 
 def circle():
-    while t.ycor() >= 0:
+    while t.ycor() > 0:
         t.forward(10)
         t.right(360/100)
+    if target <= t.xcor() <= target + 60:
+        t.write("success", False, "center", ("", 15))
+    else:
+        t.write("fail", False, "center", ("", 15))
         
 t.onkeypress(up,"Up")
 t.onkeypress(down, "Down")
 t.onkeypress(circle, "space")
-b = t.xcor()
 t.listen()
 
-if b <= target and b >= target+2:
-    print("success")
-else:
-    print("fail")
