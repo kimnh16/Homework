@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ko" lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>인천대학교 공학교육인증지원시스템</title>
+    <link rel="stylesheet" href="/Common/Css/Common.css" type="text/css" />
+    <link rel="stylesheet" href="/Common/Css/Layout.css" type="text/css" />
+    <link rel="stylesheet" href="/Common/Css/Main.css" type="text/css" />
+    <script type="text/javascript" src="/Common/Js/Scripts.js"></script>
+	<script type="text/javascript">
+        var str = self.location.href;
+
+	if ('http://abeek.incheon' == str.substring(0, 20)) {
+            self.location.href = 'https://abeek.inu.ac.kr';
+        }
+        else if ('https://' != str.substring(0, 8)) {
+            self.location.href = str.replace('http://', 'https://');
+        }
+        
+        function CheckForm(id, pwd) {
+            try {
+                var agentObj = new ActiveXObject("EzIcd.BFS.1")
+                if (document.getElementById(id).value == '') {
+                    alert('아이디는 필수항목입니다.');
+                    document.getElementById(id).focus();
+                    return false;
+                }
+                else if (document.getElementById(pwd).value == '') {
+                    alert('비밀번호는 필수항목입니다.');
+                    document.getElementById(pwd).focus();
+                    return false;
+                }
+                agentObj = null;
+            } catch (e) { }
+        }
+        function Popup() {
+            //window.open('/Contents.aspx');
+            document.location.href = '/Contents.aspx';
+            return false;
+        }
+        var str = self.location.href;
+        if ('http://icee' == str.substring(0, 11))
+        {
+            document.location.href = '/OpenWeb/Center/';
+        }
+        ///OpenWeb/Center/
+        /*
+        var str = self.location.href;
+        if ('http://' == str.substring(0, 7)) {
+            str = str.replace('http://', 'https://');
+            document.location.href = str;
+        }
+        */
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <form method="post" action="" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDk4OTYxMjQ2D2QWAmYPZBYIAgQPZBYCAgUPDxYCHg1PbkNsaWVudENsaWNrBSRyZXR1cm4gQ2hlY2tGb3JtKCd0eHRJRCcsICd0eHRQd2QnKTtkZAIGDw8WAh4HVmlzaWJsZWhkZAIIDxYCHgtfIUl0ZW1Db3VudAIFFgoCAQ9kFgJmDxUDBDcwOTMnMjAxNy0y7ZWZ6riwIEFCRUVLIOyXheustOydvOygle2RnChQRjIpCjIwMTcuMTAuMzBkAgIPZBYCZg8VAwQ3MDkyJjIwMTctMu2Vmeq4sCBBQkVFSyDsl4XrrLTsnbzsoJXtkZwoUEYpCjIwMTcuMTAuMzBkAgMPZBYCZg8VAwQ3MDg4Ne2VmeuCtCDri6jsoITsl5Ag65Sw66W4IOyLnOyKpO2FnCDsnbzsi5zspJHsp4Ag7JWI64K0CjIwMTcuMDcuMTdkAgQPZBYCZg8VAwQ3MDc4JzIwMTctMe2Vmeq4sCBBQkVFSyDsl4XrrLTsnbzsoJXtkZwoUEYyKQoyMDE3LjA0LjA0ZAIFD2QWAmYPFQMENzA3NyYyMDE3LTHtlZnquLAgQUJFRUsg7JeF66y07J287KCV7ZGcKFBGKQoyMDE3LjA0LjA0ZAIKDxYCHwICBRYKAgEPZBYCZg8VAwQ3MDkwOeyduOyynOuMgO2Vmeq1kCwg4oCYMjAxNyBJTlUg6rO17ZWZ7Y6Y7Iqk7Yuw67KM4oCZIOqwnOy1nAoyMDE3LjA5LjEzZAICD2QWAmYPFQMENzA4NWBJRkVaIOKAmOydvOyekOumrCDssL3stpwg6riw7Jes4oCZIOqyveynhOuMgO2ajCDsnbjsspzrjIAgU0XtjIAg4oCY65287J207Yq4IOq4gOufrOu4jOKAmSDrjIDsg4EKMjAxNy4wNi4xNGQCAw9kFgJmDxUDBDcwNjNY7J247LKc64yALCAyMDE2IOywveydmOyggeyihe2VqeyEpOqzhOqyveynhOuMgO2ajCDsgrDsl4XthrXsg4HsnpDsm5DrtoAg7J6l6rSA7IOBIOyImOyDgQoyMDE2LjExLjE2ZAIED2QWAmYPFQMENzA2MTrsgrzshLHsoITsnpAsIOyLoOyeheyCrOybkCDssYTsmqkuLiDsoJHsiJggOeyblDIw7J286rmM7KeACjIwMTYuMTEuMTZkAgUPZBYCZg8VAwQ3MDUwQeyduOyynOuMgCDqs7XtlZnCt+uvuOy2lO2ZgCDssL3sl4Ug7Y6Y7Iqk7Yuw67KMIDIz4oi8MjTsnbwg6rCc7LWcCjIwMTYuMTAuMDVkZOL/gOeC730c0AD6PYeiLvSXvW98HpEFQej27Al28vmZ" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAZRDROZkSHczaHhJrsv13u1WGxGOeI/qksaXRgyrlUKASo8hE5ZXwcR0kPF8CxQfbRZ3KM44mNrnq0+H8oX8i7LM9KW7XpjHhBuINT5110rU6KeKEbp39eHc9mbdvkCgxA54DLgb88U3PLMvI2vSjM+HovlhtQIZ9NUFewY05bWYA==" />
+            <input name="hdn1" type="hidden" id="hdn1" /><input name="hdn2" type="hidden" id="hdn2" />
+            <div id="Head">
+                <div class="default_box">
+                    <div class="logo"><a href="/">
+                        <img src="/Common/images/top_logo.png" alt="인천대학교 공학교육인증시스템" /></a></div>
+                    <ul class="gnb">
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/html/Sub0601.html">사이트맵</a></li>
+                        <li class="last"><a href="http://www.inu.ac.kr" title="새창열림" target="_blank">인천대학교 홈</a></li>
+                    </ul>
+                    <div class="clearfloat"></div>
+                </div>
+                <div id="lnb">
+                    <div class="lnb_bg"></div>
+                    <div class="default_box">
+                        <ul class="depth1">
+					<li><a href="/Html/Sub0101.html">대학소개</a>
+						<ul class="depth2 bg1">
+							<li><a href="/Html/Sub0101.html">대학소개<br />
+								<span>인천대학교를 소개합니다.</span></a></li>
+						</ul>
+					</li>
+					<li><a href="/Html/Sub020101.html">공학교육인증소개</a>
+						<ul class="depth2">
+							<li><a href="/Html/Sub020101.html">공학교육혁신센터</a></li>
+							<li><a href="/Html/Sub0202.html">인증이란</a></li>
+							<li><a href="/Html/Sub0203.html">인증기관</a></li>
+							<li><a href="/Html/Sub0204.html">인증특징</a></li>
+							<li><a href="/Html/Sub020501.html">인증관련 규정</a></li>
+							<li><a href="/Html/Sub0206.html">관련 LINK</a></li>
+						</ul>
+					</li>
+					<li><a href="/Html/Sub0301.html">인증프로그램</a>
+						<ul class="depth2 bg2">
+							<li><a href="/Html/Sub0301.html">인증프로그램<br />
+								<span>인천대학교 공학교육인증 프로그램으로 이동합니다.</span></a></li>
+						</ul>
+					</li>
+					<li><a href="/Html/Sub0401.html">자료실</a>
+						<ul class="depth2">
+							<li><a href="/Html/Sub0401.html">일반자료실</a></li>
+							<li><a href="/Html/Sub0402.html">위원회 자료실</a></li>
+						</ul>
+					</li>
+					<li><a href="/Html/Sub0501.html">게시판</a>
+						<ul class="depth2">
+							<li><a href="/Html/Sub0501.html">공지사항</a></li>
+							<li><a href="/Html/Sub0502.html">뉴스</a></li>
+							<li><a href="/Html/Sub0503.html">Q&amp;A</a></li>
+							<li><a href="/Html/Sub0504.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Content">
+                <div class="main_visual">
+                    <img src="/Common/Images/main_visual01.png" alt="미래주도형 공학교육 앞서가는 인천대학교의 인증된 공학시스템이 함께합니다." /></div>
+                <div class="default_box">
+                    <div class="tel" style="display:none;"><span>초기 비밀번호는 </span><strong>생년월일</strong>입니다.</div>
+                <div id="pnlLogin">
+	
+                        <div class="mc1">
+                            <span class="tit">회원 로그인</span>
+                            <label for="userid" class="skip">아이디</label>
+                            <input name="txtID" type="text" id="txtID" class="i_text" />
+                            <label for="userid" class="skip">비밀번호</label>
+                            <input name="txtPwd" type="password" id="txtPwd" class="i_text" autocomplete="off" onfocus="this.className=&#39;i_text i_pw write&#39;" onblur="if (this.value.length==0) {this.className=&#39;i_text i_pw&#39;;}else {this.className=&#39;i_text i_pw write&#39;;}" style="ime-mode: disabled;" />
+                            <input type="submit" name="btnLogin" value="로그인" onclick="return CheckForm(&#39;txtID&#39;, &#39;txtPwd&#39;);" id="btnLogin" class="login_bt" />
+                            <span class="txt pt_5">비밀번호 초기값은 <strong>주민등록 번호 앞 6자리</strong>입니다. <br />아이디/비밀번호 찾기는 관리자에게 문의해주시기 바랍니다. </span>
+                        </div>
+                
+</div>
+                
+       
+                <div class="mc2">
+                    <ul>
+                        <li class="ico2"><a href="/Html/Sub030301.html">산업경영공학심화</a></li>
+                        <li class="ico3"><a href="/Html/Sub030401.html">건설공학심화</a></li>
+                        <li class="ico4"><a href="/Html/Sub030501.html">환경공학</a></li>
+                        <li class="ico5"><a href="/Html/Sub030601.html">건축공학</a></li>
+                    </ul>
+                    <div class="clearfloat"></div>
+                </div>
+                <div class="mc3">
+                    <div class="notice borderno">
+                        <h3>공지사항</h3>
+                        
+                                <ul>
+                            
+                                     <li><a href='/Html/Sub0501.html?Seq=7093'>2017-2학기 ABEEK 업무일정표(PF2)</a><span>2017.10.30</span></li>
+                            
+                                     <li><a href='/Html/Sub0501.html?Seq=7092'>2017-2학기 ABEEK 업무일정표(PF)</a><span>2017.10.30</span></li>
+                            
+                                     <li><a href='/Html/Sub0501.html?Seq=7088'>학내 단전에 따른 시스템 일시중지 안내</a><span>2017.07.17</span></li>
+                            
+                                     <li><a href='/Html/Sub0501.html?Seq=7078'>2017-1학기 ABEEK 업무일정표(PF2)</a><span>2017.04.04</span></li>
+                            
+                                     <li><a href='/Html/Sub0501.html?Seq=7077'>2017-1학기 ABEEK 업무일정표(PF)</a><span>2017.04.04</span></li>
+                            
+                                </ul>
+                            
+                        <div class="more"><a href="/Html/Sub0501.html">
+                            <img src="/Common/images/bt_more.gif" alt="더보기" /></a></div>
+                    </div>
+                    <div class="notice">
+                        <h3>뉴스</h3>
+                        
+                                <ul>
+                            
+                                     <li><a href='/Html/Sub0502.html?Seq=7090'>인천대학교, ‘2017 INU 공학페스티벌’ 개최</a><span>2017.09.13</span></li>
+                            
+                                     <li><a href='/Html/Sub0502.html?Seq=7085'>IFEZ ‘일자리 창출 기여’ 경진대회 인천대 SE팀 ‘라이트 글러브’ 대상</a><span>2017.06.14</span></li>
+                            
+                                     <li><a href='/Html/Sub0502.html?Seq=7063'>인천대, 2016 창의적종합설계경진대회 산업통상자원부 장관상 수상</a><span>2016.11.16</span></li>
+                            
+                                     <li><a href='/Html/Sub0502.html?Seq=7061'>삼성전자, 신입사원 채용.. 접수 9월20일까지</a><span>2016.11.16</span></li>
+                            
+                                     <li><a href='/Html/Sub0502.html?Seq=7050'>인천대 공학·미추홀 창업 페스티벌 23∼24일 개최</a><span>2016.10.05</span></li>
+                            
+                                </ul>
+                            
+                        <div class="more"><a href="/Html/Sub0502.html">
+                            <img src="/Common/images/bt_more.gif" alt="더보기" /></a></div>
+                    </div>
+                    <div class="clearfloat"></div>
+                </div>
+            </div>
+    </div>
+    <!---//header-->
+    <!--content-->
+    <!--//content-->
+    <!--footer-->
+    <div id="Foot">
+        <div class="default_box">
+            <ul class="foot_banner">
+                <li><a href="http://www.inu.ac.kr" title="새창열림" target="_blank">
+                    <img src="/Common/Images/foot_banner01.jpg" alt="인천대학교" /></a></li>
+                <li><a href="http://www.moe.go.kr" title="새창열림" target="_blank">
+                    <img src="/Common/Images/foot_banner02.jpg" alt="교육부" /></a></li>
+                <li><a href="http://www.abeek.or.kr/" title="새창열림" target="_blank">
+                    <img src="/Common/Images/foot_banner03.jpg" alt="한국공학교육인증원" /></a></li>
+                <li><a href="https://www.naek.or.kr/" title="새창열림" target="_blank">
+                    <img src="/Common/Images/foot_banner04.jpg" alt="한국공학한림원" /></a></li>
+            </ul>
+            <p>
+                22012) 인천광역시 연수구 아카데미로 119(송도동) 인천대학교 8호관 공과대학 522호   T. 032-835-9632<a href="http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_160300000000" target="_blank" class="btn btn-small ml_15">개인정보처리방침</a><br />
+                Copyright(C) 2016, INCHEON UNIVERSITY All Rights Reserved
+            </p>
+        </div>
+    </div>
+    <!--//footer-->
+    </div>
+    </form>
+</body>
+</html>
