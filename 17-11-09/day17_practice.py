@@ -17,7 +17,7 @@ def play():
     t.forward(3) # 나(흰 거북이)의 속도 결정
     ang = te.towards(t.pos())
     te.setheading(ang)
-    te.forward(3) # 악당 속도(빨간 거북이) 결정
+    te.forward(2) # 악당 속도(빨간 거북이) 결정
 
 t.bgcolor("orange")
 t.speed(0)
